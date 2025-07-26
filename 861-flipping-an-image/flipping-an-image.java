@@ -1,20 +1,13 @@
 class Solution {
     public int[][] flipAndInvertImage(int[][] image) {
-        int n = (image.length);
-        int[][] result = new int[n][n];
-        for(int i = 0 ; i<n;i++){
-            for(int j = 0 ; j<n;j++){
-                result[i][j] = image[i][n-1-j];
-                if(result[i][j] == 1){
-                    result[i][j] = 0;
-                }else{
-                    result[i][j] = 1;
-                }
+        int [][] rev = new int[image[0].length][image.length];
+        for(int i=0; i<image.length; i++){
+            int k=0;
+            for(int j=image[i].length-1; j>=0; j--){
+                rev[i][k++] = image[i][j]^1;
             }
-            
         }
         
-        return result;
-
+        return rev;
     }
 }
