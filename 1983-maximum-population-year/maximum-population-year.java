@@ -1,3 +1,4 @@
+/*in this question we have to find how many people were alive in all the 100 years and return the year in which maximum people were alive*/
 class Solution {
     public int maximumPopulation(int[][] logs) {
         int[] years = new int[101];
