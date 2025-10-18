@@ -25,4 +25,3 @@
 	<li><code>1 &lt;= sentence.length &lt;= 1000</code></li>
 	<li><code>sentence</code> consists of lowercase English letters.</li>
 </ul>
-<p> ####see the logic of the code while prepration####</p>
