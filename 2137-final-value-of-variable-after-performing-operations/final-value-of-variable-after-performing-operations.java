@@ -2,17 +2,11 @@ class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int x = 0;
         for(String num : operations){
-            if(num.equals("--X")){
-                --x;
-            }
-            else if(num.equals("X--")){
-                x--;
-            }
-            else if(num.equals("++X")){
+            if(num.startsWith("+") | num.endsWith("+")){
                 ++x;
             }
-            else if(num.equals("X++")){
-                x++;
+            else{
+                --x;
             }
         }
         return x;
