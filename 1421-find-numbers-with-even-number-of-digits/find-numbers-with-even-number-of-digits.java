@@ -4,14 +4,11 @@ class Solution {
         int[] ans = new int[nums.length];
         for(int i =0 ;i < nums.length ; i++){
             String s = "" + nums[i] ;
-            ans[i] = s.strip().length();
+            ans[i] = s.length();
             if(ans[i] % 2 == 0){
                 count++;
             }
         }
-        
-            
-        
         return count;
     }
 }
