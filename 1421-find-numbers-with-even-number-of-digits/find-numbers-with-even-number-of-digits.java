@@ -5,12 +5,13 @@ class Solution {
         for(int i =0 ;i < nums.length ; i++){
             String s = "" + nums[i] ;
             ans[i] = s.strip().length();
-        }
-        for(int i =0 ;i < nums.length ; i++){
             if(ans[i] % 2 == 0){
                 count++;
             }
         }
+        
+            
+        
         return count;
     }
 }
