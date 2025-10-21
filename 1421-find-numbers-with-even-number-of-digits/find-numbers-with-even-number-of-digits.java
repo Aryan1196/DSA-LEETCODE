@@ -1,12 +1,10 @@
 class Solution {
     public int findNumbers(int[] nums) {
         int count = 0;
-        int[] ans = new int[nums.length];
         for(int i =0 ;i < nums.length ; i++){
-            String s = "" + nums[i] ;
-            ans[i] = s.length();
-            if(ans[i] % 2 == 0){
-                count++;
+            int num = (int)Math.log10(nums[i])+1;
+            if(num % 2 == 0){
+                count+=1;
             }
         }
         return count;
