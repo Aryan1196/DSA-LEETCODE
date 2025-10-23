@@ -6,10 +6,10 @@ class Solution {
             if(i>=0){
                 k = num[i]+k;
             }
-            list.add(k%10);
+            list.add(0,k%10);
             k = k/10;
         }
-        Collections.reverse(list);
+        // Collections.reverse(list);
         
         
         return list;
