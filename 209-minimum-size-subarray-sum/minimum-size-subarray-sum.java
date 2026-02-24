@@ -18,7 +18,8 @@ class Solution {
             while(sum >= target){
                 int min = j-i+1;
                 sum -= nums[i];
-                window_len = Math.min(min,window_len);
+                // window_len = Math.min(min,window_len);
+                if(min < window_len) window_len = min;
                 i++;
             }
             j++;
